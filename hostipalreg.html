@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Hospital Login</title>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">	
+	<link rel = "stylesheet" type = "text/css" href = "design.css" />
+	
+    </head>
+
+    <body background=".jpg">
+        <div id="login_form">
+            <div class="new"><span><h1><i><center>Hospital Registration form </center></i></h1></span></div>  
+          <br>
+<center>
+<div>
+	  <form name="f1"  onSubmit="alert('Thank you for successful Registration.');" method="get" >
+                <table border='0'>
+                    <tr>
+                        <td><h2><b>Hospital Name :</b></h2></td> <!-- This is your first Input Box Label-->
+                        <td>  <input type = "text"  placeholder = "Enter Hosptial Name" required /></td>
+                    </tr>
+                    <tr>
+                        <td><h2><b>Hospital Email :</b></h2></td> <!-- This is your first Input Box Label-->
+                        <td>  <input type = "email"  placeholder = "Enter Email" required /></td>
+                 </tr>
+		<tr>
+                        <td><h2><b>Hospital Phone :</b></h2></td> <!-- This is your first Input Box Label-->
+                        <td>  <input type = "text"  placeholder = "Enter Phone" required 
+                        pattern="[6789][0-9]{9}" /></td>
+                 </tr>
+
+                    <tr>
+                         <td><h2><b>Hospital Address:</b></h2></td> <!-- This is your first Input Box Label-->
+                        <td> <textarea id="myTextarea" placeholder="Enter address.." required>
+</textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><h2><b>Blood requirement/month :</b></h2></td> <!-- This is your first Input Box Label-->
+                        <td>  <input type = "text"  placeholder = "Enter requirement" required /></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><h2><b>Persons in charge:</b></h2></td> <!-- This is your first Input Box Label-->
+                        <td>  <input type = "text"  placeholder = "Enter Number of persons" required /></td>
+                    </tr>
+
+
+                
+                        <td "><h2><b>Password  :</b></h2></td><!-- This is your Second Input Box Label-->
+                        <td><input type="password" name="password" placeholder = "Enter password" required minlength="8" /><!-- This is your Second Input Box -->
+                        </td>
+                    </tr>
+                    <tr>
+ <td><input type="reset" value="reset" class="button" style="background-color: green;" />
+    </td>
+
+<td><input type="submit" value="Register" class="button" style="background-color: red;" /></td>
+               </table>
+            </form>
+</div> 
+</center>
+        </div>
+    </body>
+</html>
+
